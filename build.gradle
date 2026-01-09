@@ -61,6 +61,10 @@ dependencies {
     // Test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // ModelMapper 추가
+    implementation 'org.modelmapper:modelmapper:3.2.0'
 }
 
 tasks.named('test') {
